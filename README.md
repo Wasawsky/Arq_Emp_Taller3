@@ -1,12 +1,12 @@
-# Parcial
+# Clientes y Servicios
 
 Arquitecturas Empresariales 2020-2
 
 ## Generalidades
 
-https://gentle-atoll-84797.herokuapp.com/inputdata
+https://whispering-badlands-84825.herokuapp.com/
 
-Este repositorio presenta el primer parcial de arquitecturas empresariales, usando las herramientas Maven, Heroku, Spark, Git y JAVA para su desarrollo.
+Este repositorio presenta taller de cliente y servicios de arquitecturas empresariales, usando las herramientas Maven, Heroku, Git y JAVA para su desarrollo.
 
 
 ### Prerrequisitos
@@ -37,11 +37,11 @@ Cuando esté preparado abra un directorio en su computador donde quiera trabajar
 Ejecuta la consola de comandos desde el directorio y escribe en la línea de comandos
 
 ```
-git clone https://github.com/Wasawsky/Parcial_Arq_Emp_1.git
+git clone https://github.com/Wasawsky/Arq_Emp_Taller3.git
 
 ```
 
-Se le creara una carpeta llamada Parcial_Arq_Emp_1 en el directorio, es este repositorio desde donde trabajara.
+Se le creara una carpeta llamada Arq_Emp_Taller3 en el directorio, es este repositorio desde donde trabajara.
 
 Ingrese a la carpeta y ejecute la consola de comandos, o usando un framework de desarrollo abra la carpeta.
 
@@ -59,11 +59,11 @@ Se descargarán librerías que necesitara el proyecto, puede tardar algunos minu
 Si necesita ejecutar localmente el servidor, use el siguiente comando para ejecutarlo desde cmd de Windows
 
 ```
-web: java -cp target/classes;target/dependency/* edu.escuelaing.arep.Spark.SparkWebApp
+web: java -cp target/classes;target/dependency/* co.edu.escuelaing.sparkd.SparkD.micro.MicroBoot
 ```
 Abra su navegador y busque la direccion web:
 
-http://localhost:4567/inputdata
+http://localhost:4567/index.html
 
 Si desea usar heroku para el despliegue local, coloque en la consola el comando
 
@@ -74,31 +74,25 @@ heroku local web
 Abra su navegador y busque la direccion web:
 
 
-http://localhost:5000/inputdata
+http://localhost:5000/index.html
 
 ### Funcionalidades
 
-Este proyecto, desplegado en heroku, permite calcular el promedio y el ordenamiento de un conjunto de valores.
+Este proyecto, desplegado en heroku, permite acceder a los recursos que tiene el servidor, entre ellos
 
+- form.html
+- /css/style.css
+- gato.jpg
+- index.html
+
+Adicionalmente, se conecta a una base de datos para consultar los datos de un pedido.
+
+https://whispering-badlands-84825.herokuapp.com/Apps/report
 
 ## Uso
 
-Puede ejecutar el método principal de la clase Client.java desde la consola de comandos para iniciar el programa, escriba los datos que quiere que el servidor opere y oprima ENTER.
+Puede ejecutar el método principal de la clase MicroSpBoot.java desde la consola de comandos para iniciar el servidor, ejecute la clase DBConnection.java para verificar la conexion con la base de datos.
 
-Podrá visualizar el promedio y los datos organizados.
-
-Ejemplo:
-
-```
-Ponga los datos a procesar separados por comas
-1,5,8,6
-Datos a procesar: 1,5,8,6
-{
-  "array" : [ 1.0, 5.0, 6.0, 8.0 ],
-  "sumax" : 20.0,
-  "prom" : 5.0
-}
-```
 
 ## Construido con
 

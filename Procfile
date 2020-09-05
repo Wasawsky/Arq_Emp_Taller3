@@ -1,1 +1,1 @@
-web: java -cp target/classes:target/dependency/* edu.escuelaing.arep.Spark.SparkWebApp
+web: java -cp target/classes:target/dependency/* co.edu.escuelaing.sparkd.SparkD.micro.MicroBoot
